@@ -56,8 +56,12 @@ This is a web application that creates a website using the MVC framework and a M
 - In a web browser, navigate to https://localhost:5001/
 
 ## Known Bugs
+None
 
-The application is not currently functional because the views are not completed, and possibly something to do with ASP.NET Core development certificates.
+## Project Roadmap
+Future features could include:
+* Multiple specific details rather than a generic "details" field (e.g. date of hire/purchase, department/production line, etc.)
+* Styling
 
 ## License
 
