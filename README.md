@@ -1,6 +1,7 @@
 # Dr. Sillystringz's Factory
 #### By Mike Wilkes
 #### A C# MVC application for a factory manager to view and manage lists of the factory's engineers and machines
+<img src="./Dr__Sillystringz.jpg" alt="Image of the factory" style="max-width: 500px;" />
 
 ## Technologies Used
 
