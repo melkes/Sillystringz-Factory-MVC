@@ -19,25 +19,17 @@ This is a web application that creates a website using the MVC framework and a M
 - If you do not have MySQL Workbench, download it [here](https://dev.mysql.com/downloads/workbench/), install, and open.
 - Clone this repository
 ### In MySQL Workbench:
-- In the Navigator > Administration window, select Data Import/Restore.
-
-- In Import Options select Import from Self-Contained File.
-
-- Select the mike_wilkes.sql file from this repository
-
-- Under Default Schema to be Imported To, select the New button.
-
-- Enter a name for this database, eg mike_wilkes.
-- Click Ok.
-- Navigate to the tab called Import Progress and click Start Import at the bottom right corner of the window.
+#### _Add content here_
 ### In VS Code:
 - Open this directory
-- Create a .gitignore file in the project folder with the contents:
+- Create a .gitignore file in the project folder with the contents:<br>
   `obj`<br>
   `bin`<br>
-  `appsettings.json`
+  `appsettings.json`<br>
+  `launchSettings.json`<br>
+  `.DS_Store`<br>
 
-- Navigate to the HairSalon directory
+- Navigate to the Factory directory
 - Create an appsettings.json file with the following contents, replacing the values inside brackets [] with your own:
 
 ```
