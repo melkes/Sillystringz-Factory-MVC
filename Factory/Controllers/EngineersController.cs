@@ -17,13 +17,13 @@ namespace Factory.Controllers
     public ActionResult Index()
       {
         List<Engineer> model = _db.Engineers
-                              // .Include(engineer => engineer.Machines)
+                              .Include(engineer => engineer.Machine)
                               .ToList();
         return View(model);
       }
       public ActionResult Create()
       {
-        // ViewBag.MachineList = new SelectList(_db.Machines, "MachineId", "Name");
+        ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "Name", "MachineDetails");
         return View();
       }
     
@@ -47,8 +47,8 @@ namespace Factory.Controllers
         Engineer thisEngineer = _db.Engineers
         // check these lines.
                             .Include(engineer => engineer.Machine)
-                            .Include(engineer => engineer.JoinEntities)
-                            .ThenInclude(join => join.Machine)
+                            .Include(join => join.JoinEntities)
+                            .ThenInclude(join => join.MachineDetails)
                             .FirstOrDefault(engineer => engineer.EngineerId == id);
         return View(thisEngineer);
       }
@@ -87,7 +87,7 @@ namespace Factory.Controllers
       ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "Name");
       return View(thisEngineer);
     }
-
+    [HttpPost, ActionName("AddMachine")]
     [HttpPost]
     public ActionResult AddMachine(Engineer engineer, int machineId)
     {

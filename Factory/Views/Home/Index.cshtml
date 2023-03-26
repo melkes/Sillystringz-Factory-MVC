@@ -2,15 +2,16 @@
   Layout = "_Layout";
 }
 
-@using Factory.Models;
-@{
+@* @{
     ViewBag.Title = "Dr. Sillystringz's Factory";
-}
+} *@
 
 <div class="jumbotron">
     <h1>Welcome to the Dr. Sillystringz's Factory management application</h1>
     <p>You can use this application to view, create, edit, or delete from the lists of engineers and machines</p>
     <hr>
+</div>
+<div class="container">
     <p>
         @Html.ActionLink("View Engineers", "Index", "Engineers", null, new { @class = "btn btn-primary btn-lg" })
     </p>
