@@ -17,7 +17,8 @@ namespace Factory.Controllers
     public ActionResult Index()
       {
         List<Engineer> model = _db.Engineers
-                              .Include(engineer => engineer.Machine)
+                              // Maybe don't need this line?
+                              // .Include(engineer => engineer.Machine) 
                               .ToList();
         return View(model);
       }
@@ -46,9 +47,9 @@ namespace Factory.Controllers
       {
         Engineer thisEngineer = _db.Engineers
         // check these lines.
-                            .Include(engineer => engineer.Machine)
-                            .Include(join => join.JoinEntities)
-                            .ThenInclude(join => join.MachineDetails)
+                            // .Include(engineer => engineer.Machine)
+                            .Include(engineer => engineer.JoinEntities)
+                            .ThenInclude(join => join.Machine)
                             .FirstOrDefault(engineer => engineer.EngineerId == id);
         return View(thisEngineer);
       }

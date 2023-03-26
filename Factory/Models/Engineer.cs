@@ -10,8 +10,11 @@ namespace Factory.Models
     [Required(ErrorMessage = "You must include a name for the engineer!")]
     public string Name { get; set; }
     public string EngineerDetails { get; set; }
-     public int MachineId { get; set; }
-    public Machine Machine { get; set; }
-    public List<Machine> JoinEntities { get; set; }
+    //  public int MachineId { get; set; }
+    // public Machine Machine { get; set; }
+    public List<EngineerMachine> JoinEntities { get; set; }
+
+    // public List<Machine> Machine { get; set; }
+
   }
 }
