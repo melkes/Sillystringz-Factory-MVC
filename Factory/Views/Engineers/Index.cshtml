@@ -9,10 +9,11 @@
 } 
 else
 {
+  <h3>Engineers for this factory:</h3>
   <ul>
     @foreach (Engineer engineer in Model)
     {
-      <li>@Html.ActionLink($"{engineer.Name}", "Details", new { id = engineer.EngineerId }, new { @class = "btn btn-secondary btn-lg" })</li>
+      <li>@Html.ActionLink($"{engineer.Name}", "Details", new { id = engineer.EngineerId }, new { @class = "btn btn-secondary" })</li>
     }     
 
   </ul>

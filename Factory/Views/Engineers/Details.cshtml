@@ -1,3 +1,33 @@
 @{
   Layout = "_Layout";
 }
+
+@model Factory.Models.Engineer
+
+<h2>Engineer Details</h2>
+<hr />
+<h4>@Html.DisplayNameFor(model => model.Name): <small class="text-muted">@Html.DisplayFor(model => model.Name)</small></h4>
+
+<h4>Details: <small class="text-muted">@Html.DisplayFor(model => model.EngineerDetails)</small></h4>
+
+
+<h3>Machines </h3>
+<ul>
+  @* @foreach(EngineerMachine join in Model.JoinEntities)
+  {
+    <li>@Machine.Name</li>
+  } *@
+</ul>
+
+
+<a asp-action="Index">Back to List</a>
+
+
+
+@* <p>@Html.ActionLink("Check out Book", "Checkout", new {id = Model.BookId})</p>
+
+<br>
+
+<p>@Html.ActionLink("Show all books", "Index")</p>
+<p>@Html.ActionLink("Edit book", "Edit", new {id = Model.BookId})</p>
+<p>@Html.ActionLink("Delete book", "Delete", new {id = Model.BookId})</p> *@
