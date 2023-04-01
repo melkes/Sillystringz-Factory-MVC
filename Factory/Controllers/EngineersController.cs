@@ -17,14 +17,13 @@ namespace Factory.Controllers
     public ActionResult Index()
       {
         List<Engineer> model = _db.Engineers
-                              // Maybe don't need this line?
                               // .Include(engineer => engineer.Machine) 
                               .ToList();
         return View(model);
       }
       public ActionResult Create()
       {
-        ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "Name", "MachineDetails");
+        // ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "Name", "MachineDetails");
         return View();
       }
     

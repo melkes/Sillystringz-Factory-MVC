@@ -13,7 +13,7 @@ namespace Factory.Models
 
     public List<EngineerMachine> JoinEntities { get; set; }
 
-    public List<Machine> Machine { get; set; }
+    public List<Machine> Machines { get; set; }
 
   }
 }

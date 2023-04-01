@@ -49,7 +49,7 @@ This is a web application that creates a website using the MVC framework and a M
 - In a web browser, navigate to https://localhost:5001/
 
 ## Known Bugs
-None
+Project is missing some view content needed to make it complete. Migrations may need to be adjusted.
 
 ## Project Roadmap
 Future features could include:
