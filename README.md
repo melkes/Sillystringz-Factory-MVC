@@ -55,7 +55,7 @@ $ dotnet add package Microsoft.EntityFrameworkCore.Design -v 6.0.0
 
 ## Known Bugs
 * 'Delete' view for Engineers is not displaying or functioning as intended.
-* Machine detail view is not displaying as intended.
+* 'Edit' view for Engineers is not displaying or functioning as intended.
 * Project is missing some view content needed to make it complete. Migrations may need to be updated. 
 
 
