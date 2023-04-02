@@ -15,9 +15,10 @@
 
   @Html.LabelFor(model => model.Name)
   @Html.EditorFor(model => model.Name)
-
+@* 
   @Html.LabelFor(model => model.Machines)
-  @Html.DropDownList("MachineID")
+  @Html.Label("Select a machine")
+  @Html.DropDownList("MachineID") *@
 
   <input type="submit" value="Save" />
 }
