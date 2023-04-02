@@ -41,6 +41,11 @@ This is a web application that creates a website using the MVC framework and a M
 }
 ```
 
+In order to use dotnet-ef, we also need to install the Microsoft.EntityFrameworkCore.Design package in our ASP.NET Core projects. Within Factory folder of the app, run the following command:
+```
+$ dotnet add package Microsoft.EntityFrameworkCore.Design -v 6.0.0
+```
+
 - In a terminal window, run:
   - `dotnet restore`
   - `dotnet build`

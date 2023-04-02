@@ -11,14 +11,14 @@ else
 {
   <h3>Engineers for this factory:</h3>
   <ul>
-    @foreach (Engineer engineer in Model)
+    @foreach (Machine machine in Model)
     {
       <div class="list-group">
-      <li>@Html.ActionLink($"{engineer.Name}", "Details", new { id = engineer.EngineerId }, new { @class = "font-weight-normal" })</li>
+      <li>@Html.ActionLink($"{machine.Name}", "Details", new { id = machine.MachineId }, new { @class = "font-weight-normal" })</li>
       </div>
     }     
 
   </ul>
 }
-<p>@Html.ActionLink("Add new engineer", "Create")</p>
+<p>@Html.ActionLink("Add new machine", "Create")</p>
 <p>@Html.ActionLink("Home", "Index", "Home")</p>
