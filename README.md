@@ -54,7 +54,9 @@ $ dotnet add package Microsoft.EntityFrameworkCore.Design -v 6.0.0
 - In a web browser, navigate to https://localhost:5001/
 
 ## Known Bugs
-Project is missing some view content needed to make it complete. Migrations may need to be adjusted.
+* 'Delete' view for Engineers is not displaying as intended.
+* Project is missing some view content needed to make it complete. Migrations may need to be adjusted. 
+
 
 ## Project Roadmap
 Future features could include:
