@@ -45,7 +45,7 @@ namespace Factory.Controllers
       public ActionResult Details(int id)
       {
         Machine thisMachine = _db.Machines
-        // check these lines.
+
                             .Include(machine => machine.Engineers)
                             .Include(machine => machine.JoinEntities)
                             .ThenInclude(join => join.Engineer)
