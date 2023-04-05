@@ -9,7 +9,7 @@ namespace Factory.Models
     public int EngineerId { get; set; }
     [Required(ErrorMessage = "You must include a name for the engineer!")]
     public string Name { get; set; }
-    public string EngineerDetails { get; set; }
+    public string HireDate { get; set; }
 
     public List<EngineerMachine> JoinEntities { get; set; }
 
