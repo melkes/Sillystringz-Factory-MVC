@@ -16,13 +16,7 @@
 
 This is a web application that creates a website using the MVC framework and a MySQL database to manage and display data. It is designed for a factory manager to view and manage lists of the factory's engineers and machines. It allows you to select an engineer to view a list of the machines they are licensed to use, and likewise you can select a machine and view all engineers that may work on it. Users can also add, edit, and delete engineers and machines from the database.
 ## Setup instructions
-
-- If you do not have MySQL Workbench, download it [here](https://dev.mysql.com/downloads/workbench/), install, and open.
-- Clone this repository
-### In MySQL Workbench:
-#### _Add content here_
-### In VS Code:
-- Open this directory
+- Clone this repository and open in VS Code
 - Create a .gitignore file in the project folder with the contents:<br>
   `obj`<br>
   `bin`<br>
@@ -41,27 +35,26 @@ This is a web application that creates a website using the MVC framework and a M
 }
 ```
 
-In order to use dotnet-ef, we also need to install the Microsoft.EntityFrameworkCore.Design package in our ASP.NET Core projects. Within Factory folder of the app, run the following command:
+In order to use dotnet-ef, you also need to install the Microsoft.EntityFrameworkCore.Design package. Within Factory folder of the app, run the following command:
 ```
 $ dotnet add package Microsoft.EntityFrameworkCore.Design -v 6.0.0
 ```
+* Run database migrations to create the needed database tables:
+`dotnet ef database update`
 
 - In a terminal window, run:
   - `dotnet restore`
   - `dotnet build`
   - `dotnet run`
 - You may be asked to enter your system password
-- In a web browser, navigate to https://localhost:5001/
+- In a web browser, navigate to https://localhost:5001/ if it does not open automatically.
 
 ## Known Bugs
-* 'Delete' view for Engineers is not displaying or functioning as intended.
-* 'Edit' view for Engineers does not include add/delete machines.
-* Project is missing some view content needed to make it complete. Migrations may need to be updated. 
-
+None at this time.
 
 ## Project Roadmap
 Future features could include:
-* Multiple specific details rather than a generic "details" field (e.g. date of hire/purchase, department/production line, etc.)
+* Multiple specific details rather just a details or hire date field (e.g. dates of machine purchase and training, specifiying department/production line, etc.)
 * Styling
 
 ## License
