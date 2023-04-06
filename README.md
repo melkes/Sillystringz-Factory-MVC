@@ -39,7 +39,7 @@ In order to use dotnet-ef, you also need to install the Microsoft.EntityFramewor
 ```
 $ dotnet add package Microsoft.EntityFrameworkCore.Design -v 6.0.0
 ```
-* Run database migrations to create the needed database tables:
+* Run database migrations to create the needed database tables: <br>
 `dotnet ef database update`
 
 - In a terminal window, run:
